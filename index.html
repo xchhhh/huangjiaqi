@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>高考加油｜倒回这一刻</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-photo" aria-hidden="true"></div>
+  <div class="scanlines"></div>
+  <canvas id="fx"></canvas>
+  <div class="sticker-layer" id="stickerLayer"></div>
+  <div class="modal" id="tipModal" aria-hidden="true">
+    <div class="panel" role="dialog" aria-modal="true" aria-labelledby="tipTitle">
+      <button class="close-btn" id="closeTip" type="button" aria-label="关闭">×</button>
+      <div class="panel-head">
+        <span class="panel-badge">暖心提示</span>
+        <span class="panel-sub">点开就会放大</span>
+      </div>
+      <h2 class="panel-title" id="tipTitle"></h2>
+      <p class="panel-body" id="tipBody"></p>
+      <div class="chips" id="tipChips"></div>
+    </div>
+  </div>
+
+  <!-- 信纸遮罩层 -->
+  <div class="envelope-letter-mask" id="envelopeLetterMask"></div>
+
+  <!-- 信封 -->
+  <div class="envelope-wrap" id="envelopeWrap">
+    <div class="envelope" id="envelope">
+      <div class="envelope-flap" id="envelopeFlap">
+        <div class="envelope-seal">✦</div>
+      </div>
+      <div class="envelope-body"></div>
+      <div class="envelope-letter" id="envelopeLetter">
+        <div class="letter-rune tl">时</div>
+        <div class="letter-rune tr">回</div>
+        <div class="letter-rune bl">稳</div>
+        <div class="letter-rune br">愿</div>
+        <div class="letter-content" id="letterContent">
+          <div class="letter-scroll-hint" id="letterScrollHint">↓ 继续阅读</div>
+          <p class="letter-salutation">嘉琦：</p>
+          <p class="letter-greeting">你好！</p>
+          <p class="letter-para">提笔的时候，脑海里全是我们在游戏里一起熬过的无数个深夜。我盯着屏幕看了很久，忽然就想起三年前的今天，我们也是这样隔着屏幕，有说不完的话。</p>
+          <p class="letter-para">那时候你刚初中毕业，转眼一晃三年，那个可爱的小姑娘，竟然就要独自走上高考的战场了。</p>
+          <p class="letter-para">这三年，我隔着屏幕，陪你走过了整个高一，还有大半段高二。和你深夜聊过的天，听过你分享的校园趣事，分享过你考出好成绩时雀跃的声音，也陪你一起紧张地等待过成绩。我知道你有多努力，知道你为了目标放弃了多少，知道你咬着牙坚持了多久。</p>
+          <p class="letter-para letter-emphasis">你真的很棒，比你自己想象的还要棒得多。</p>
+          <p class="letter-para">明天就要考试了，别紧张。把笔握稳，把心放平，把会做的题都做对就好。不用逼自己成为最好的那个，只要你尽力了，就没有遗憾。</p>
+          <p class="letter-para">无论你考去哪里，无论未来我们会变成什么样，我都会记得，在那段日子里，是你陪我走过。而现在，换我站在这里，为你加油。</p>
+          <p class="letter-para">考完了，不管结果如何，都要开开心心，笑对生活。记得告诉我一声。</p>
+          <p class="letter-wish">祝你高考顺利，前程似锦。</p>
+          <div class="letter-closing">
+            <p>此致</p>
+            <p>敬礼！</p>
+          </div>
+          <p class="letter-sign">许成合</p>
+          <p class="letter-date">2026 年 6 月 6 日</p>
+        </div>
+      </div>
+    </div>
+    <div class="envelope-hint">点开信封</div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
